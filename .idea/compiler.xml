@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springcloud-feign" />
+        <module name="springcloud-client-02" />
+        <module name="springcloud-server" />
+        <module name="springcloud-client" />
+        <module name="springcloud-rabbion" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springcloud-client" target="1.8" />
+      <module name="springcloud-client-02" target="1.8" />
+      <module name="springcloud-feign" target="1.8" />
+      <module name="springcloud-rabbion" target="1.8" />
+      <module name="springcloud-server" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springcloud-client" options="-parameters" />
+      <module name="springcloud-client-02" options="-parameters" />
+      <module name="springcloud-feign" options="-parameters" />
+      <module name="springcloud-rabbion" options="-parameters" />
+      <module name="springcloud-server" options="-parameters" />
+    </option>
+  </component>
+</project>
